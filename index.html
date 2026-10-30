@@ -3,55 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mi Primera App en React</title>
+  <title>Inicio - Café del Cauca</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
   <header class="encabezado">
-    <h1 class="encabezado__titulo">Mi Primera App en React</h1>
-    <p class="encabezado__subtitulo">Ejemplo basico con componentes</p>
+    <h1 class="encabezado__titulo">Café del Cauca</h1>
+    <p class="encabezado__subtitulo">El mejor café de Popayán</p>
   </header>
 
   <nav class="menu">
-    <a class="menu__enlace" href="#">Inicio</a>
-    <a class="menu__enlace" href="#">Servicios</a>
-    <a class="menu__enlace" href="#">Nosotros</a>
-    <a class="menu__enlace" href="#">Contacto</a>
+    <a class="menu__enlace" href="index.html">Inicio</a>
+    <a class="menu__enlace" href="nosotros.html">Nosotros</a>
+    <a class="menu__enlace" href="contacto.html">Contacto</a>
   </nav>
 
   <main class="principal">
     <div class="principal__columna">
-      <!-- Punto 1 -->
       <section class="tarjeta">
         <h2 class="tarjeta__titulo">Bienvenidos</h2>
-        <p class="tarjeta__texto">Esta es una sección dentro del componente Main. Cada parte de la página es un componente independiente.</p>
-      </section>
-
-      <!-- Punto 2: dos secciones nuevas -->
-      <section class="tarjeta">
-        <h2 class="tarjeta__titulo">Servicios</h2>
-        <p class="tarjeta__texto">Aquí se describen los servicios que ofrece la aplicación.</p>
+        <p class="tarjeta__texto">Café especial cultivado en las montañas del Cauca y tostado de forma artesanal.</p>
       </section>
 
       <section class="tarjeta">
-        <h2 class="tarjeta__titulo">Nosotros</h2>
-        <p class="tarjeta__texto">Somos aprendices del SENA aprendiendo a crear componentes.</p>
+        <h2 class="tarjeta__titulo">Nuestro café</h2>
+        <p class="tarjeta__texto">Disponible en grano o molido.</p>
+        <p class="precio">$ 18.000 / libra</p>
+        <a class="boton" href="contacto.html">Pedir ahora</a>
       </section>
     </div>
 
-    <!-- Punto 2: aside -->
     <aside class="lateral">
-      <h2 class="lateral__titulo">Enlaces útiles</h2>
-      <ul class="lateral__lista">
-        <li>Documentación</li>
-        <li>Tutoriales</li>
-        <li>Soporte</li>
-      </ul>
+      <h2 class="lateral__titulo">Noticias</h2>
+      <p class="lateral__texto">Próximamente tendremos catas de café abiertas al público en Popayán.</p>
     </aside>
   </main>
 
   <footer class="pie">
-    <p> 2026 - Hecho por Aprendiz SENA</p>
+    <p> 2026 - Café del Cauca</p>
   </footer>
 </body>
 </html>

@@ -1,33 +1,62 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* rem */
 html { font-size: 16px; }
 
 body { font-family: Arial, sans-serif; background: #f2f2f2; color: #333; }
 
 /* Header verde */
-.encabezado { background: #39a900; color: #fff; text-align: center; padding: 1rem; }
-.encabezado__titulo { font-size: 1.75rem; }
+.encabezado { background: #39a900; color: #fff; text-align: center;
+              padding: 1rem; }                 
+.encabezado__titulo { font-size: 1.75rem; }     
 .encabezado__subtitulo { font-size: 0.8rem; margin-top: 0.25rem; }
 
 /* Menu oscuro */
-.menu { background: #222; display: flex; justify-content: center; gap: 2rem; padding: 0.8em; }
+.menu { background: #222; display: flex; justify-content: center;
+        gap: 2rem;                              
+        padding: 0.8em; }                       
 .menu__enlace { color: #fff; text-decoration: none; font-size: 0.8rem; }
 .menu__enlace:hover { color: #39a900; }
 
-/* Contenido principal */
-.principal { max-width: 960px; margin: 1.5rem auto; padding: 0 1rem; display: flex; gap: 1.25rem; }
+/* Main */
+.principal { max-width: 960px;                  
+             margin: 1.5rem auto; padding: 0 1rem;
+             display: flex; gap: 1.25rem; }
 .principal__columna { flex: 3; }
 
-/* Tarjeta blanca */
-.tarjeta { background: #fff; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,.15); padding: 1.25rem; margin-bottom: 1rem; }
-.tarjeta__titulo { color: #39a900; font-size: 1.25rem; margin-bottom: 0.5rem; }
+/* Tarjetas blancas */
+.tarjeta { background: #fff;
+           border-radius: 8px;                  
+           box-shadow: 0 2px 6px rgba(0,0,0,.15);  
+           padding: 1.25rem; margin-bottom: 1rem; }  
+.tarjeta__titulo { color: #39a900; font-size: 1.25rem;  
+                   margin-bottom: 0.5em; }      
 .tarjeta__texto { font-size: 0.85rem; line-height: 1.5; }
+
+/* Precio y boton */
+.precio { font-size: 1.2em; font-weight: bold; color: #39a900;  
+          margin: 0.75rem 0; }
+.boton { display: inline-block; background: #39a900; color: #fff; text-decoration: none;
+         border: none; cursor: pointer; font-size: 0.85rem; font-family: inherit;
+         padding: 0.6em 1.2em;                  
+         border-radius: 6px; }                  
+.boton:hover { background: #2d8300; }
+
+/* Formulario */
+.campo { display: block; width: 100%; margin: 0.5rem 0 1rem; padding: 0.6em;
+         border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem; }
 
 /* Aside */
 .lateral { flex: 1; background: #fff; border-left: 4px solid #39a900; border-radius: 8px;
            box-shadow: 0 2px 6px rgba(0,0,0,.15); padding: 1.25rem; align-self: flex-start; }
 .lateral__titulo { color: #39a900; font-size: 1rem; margin-bottom: 0.5rem; }
-.lateral__lista { list-style: none; font-size: 0.85rem; line-height: 1.8; }
+.lateral__texto { font-size: 0.85rem; line-height: 1.5; }
 
 /* Footer oscuro */
 .pie { background: #222; color: #fff; text-align: center; font-size: 0.75rem; padding: 0.9rem; }
+
+/* Media query */
+@media (max-width: 600px) {                    
+  .principal { flex-direction: column; }
+  .menu { flex-direction: column; text-align: center; }
+}
